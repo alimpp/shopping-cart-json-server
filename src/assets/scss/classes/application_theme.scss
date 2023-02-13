@@ -1,0 +1,23 @@
+@import '../variables/themeColors';
+
+.application_dark_mode_theme{
+    background-color: var(--application-dark-mode);
+    color: var(--light-);
+    transition: 0.3s;
+}
+.application_light_mode_theme{
+    background-color: var(--application-light-mode);
+    color: var(--dark-);
+    transition: 0.3s;
+}
+
+.nav_dark_mode_theme{
+    background-color: var(--nav-dark-mode);
+    color: var(--light-);
+    transition: 0.3s;
+}
+.nav_light_mode_theme{
+    background-color: var(--nav-light-mode);
+    color: var(--dark-);
+    transition: 0.3s;
+}
