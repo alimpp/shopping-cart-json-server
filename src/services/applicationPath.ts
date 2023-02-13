@@ -2,7 +2,8 @@ export const application_base_url: string = "http://localhost:3000";
 
 export const application_path = {
   GET: {
-    PRODUCTS: '/products'
+    PRODUCTS: '/products',
+    CAROUSEL: '/carousel'
   },
   POST: {
     CREATE_PRODUCTS: '/products'
