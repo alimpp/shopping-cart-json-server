@@ -10,7 +10,6 @@
       <img src="@/assets/icons/app-logo.png" alt="logo" />
     </div>
     <div class="items-container">
-      <languageSwitcher class="px-2" />
       <themeSwitcher class="mt-1" />
       <hamburgerMenu class="mx-2 mt-2" />
     </div>
@@ -20,7 +19,6 @@
 <script setup>
 import { computed, onMounted } from "vue";
 import themeSwitcher from "@/components/themeSwitcher";
-import languageSwitcher from "@/components/languageSwitcher";
 import hamburgerMenu from "@/layout/base/hamburgerMenu";
 import { applicationTheme } from "@/services/applicationTheme";
 

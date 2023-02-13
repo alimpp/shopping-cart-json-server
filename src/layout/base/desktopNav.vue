@@ -10,7 +10,18 @@
       <img src="@/assets/icons/app-logo.png" alt="logo" />
     </div>
     <div class="items-container">
-      <languageSwitcher class="px-2" />
+      <div class="d-flex mx-5 px-5">
+        <span class="application_pointer" @click="goToHome">{{ $t("nav.home") }}</span>
+        <span class="application_pointer px-4" @click="goToAbout">{{
+          $t("nav.about")
+        }}</span>
+        <span class="application_pointer" @click="goToProducts">{{
+          $t("nav.products")
+        }}</span>
+        <span class="application_pointer px-4" @click="goToContact">{{
+          $t("nav.contact")
+        }}</span>
+      </div>
       <themeSwitcher class="px-2" />
     </div>
   </div>
@@ -19,15 +30,31 @@
 <script setup>
 import { computed, onMounted } from "vue";
 import themeSwitcher from "@/components/themeSwitcher";
-import languageSwitcher from "@/components/languageSwitcher";
 import { applicationTheme } from "@/services/applicationTheme";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const theme = applicationTheme();
+
+const goToHome = () => {
+  return router.push('/home')
+}
+
+const goToAbout = () => {
+  return router.push('/about')
+}
+
+const goToProducts = () => {
+  return router.push('/products')
+}
+
+const goToContact = () => {
+  return router.push('/contact')
+}
 
 const watchTheme = computed(() => {
   return theme.themeStatus;
 });
-
 </script>
 
 <style lang="scss" scoped>

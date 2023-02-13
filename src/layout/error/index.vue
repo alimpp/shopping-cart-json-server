@@ -1,5 +1,7 @@
 <template>
-  <div class="error-page"></div>
+  <div class="error-page">
+    <h1>Error...!</h1>
+  </div>
 </template>
 
 <script>

@@ -13,13 +13,22 @@
         <div
           class="d-flex flex-column justify-content-center align-items-center application_animation"
         >
-          <div class="d-flex flex-column mt-5">
-            <img src="@/assets/icons/app-logo.png" alt="logo" />
-            <profileModal class="mt-2" />
-          </div>
-          <registerModal class="mt-5" v-if="!checkAuth" />
-          <createArticleModal class="mt-5" v-if="checkAuth" />
-          <div class="d-flex mt-2">
+          <img src="@/assets/icons/app-logo.png" alt="logo" />
+
+          <span class="application_pointer pt-5" @click="goToHome">{{
+            $t("nav.home")
+          }}</span>
+          <span class="application_pointer" @click="goToAbout">{{
+            $t("nav.about")
+          }}</span>
+          <span class="application_pointer" @click="goToProducts">{{
+            $t("nav.products")
+          }}</span>
+          <span class="application_pointer" @click="goToContact">{{
+            $t("nav.contact")
+          }}</span>
+
+          <div class="d-flex mt-5">
             <i class="bi bi-instagram px-1"></i>
             <i class="bi bi-linkedin px-1"></i>
             <i class="bi bi-telegram px-1"></i>
@@ -35,9 +44,31 @@
 <script setup>
 import { ref, computed } from "vue";
 import { applicationTheme } from "@/services/applicationTheme";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const theme = applicationTheme();
 const isOpen = ref(false);
+
+const goToHome = () => {
+  router.push("/home");
+  openSideBar();
+};
+
+const goToAbout = () => {
+  router.push("/about");
+  openSideBar();
+};
+
+const goToProducts = () => {
+  router.push("/products");
+  openSideBar();
+};
+
+const goToContact = () => {
+  router.push("/contact");
+  openSideBar();
+};
 
 const openSideBar = () => {
   isOpen.value = !isOpen.value;
@@ -46,7 +77,6 @@ const openSideBar = () => {
 const watchTheme = computed(() => {
   return theme.themeStatus;
 });
-
 </script>
 
 <style lang="scss" scoped>
@@ -74,7 +104,7 @@ const watchTheme = computed(() => {
     animation: 0.2s opanSidebar;
     overflow-y: scroll;
     overflow-x: none;
-    img{
+    img {
       width: 70px;
       height: 70px;
     }
