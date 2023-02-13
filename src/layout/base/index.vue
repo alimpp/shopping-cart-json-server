@@ -16,7 +16,6 @@ import applicationFooter from '@/layout/base/applicationFooter'
 <style lang="scss" scoped>
 .index-layout {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   .mobile-size {

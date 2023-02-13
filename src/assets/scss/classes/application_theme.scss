@@ -21,3 +21,14 @@
     color: var(--dark-);
     transition: 0.3s;
 }
+
+.basecard_dark_mode_theme{
+   background-color: var(--basecard-dark-mode);
+   color: var(--light-);
+   transition: 0.3s;
+}
+.basecard_light_mode_theme{
+   background-color: var(--basecard-light-mode);
+   color: var(--dark-);
+   transition: 0.3s;
+}

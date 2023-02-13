@@ -4,7 +4,31 @@
             "id": 0 , 
             "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/jvcf7clhvzyavyopsi9n/revolution-5-womens-road-running-shoes-hC41Vf.png",
             "name": "Nike Sport" , 
-            "category": "sport" , 
+            "category": "Sport" , 
+            "price": 200 ,
+            "comments": [] 
+        },
+        {
+            "id": 1 , 
+            "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/4e894c2b76dd4c8e9013aafc016047af_9366/Superstar_Shoes_White_FV3284_01_standard.jpg",
+            "name": "Super Star" , 
+            "category": "Sport" , 
+            "price": 300 ,
+            "comments": [] 
+        },
+        {
+            "id": 2 , 
+            "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/00097f2522784e6d96b0aba400aa87a1_9366/Daily_3.0_Shoes_Grey_FW3270_01_standard.jpg",
+            "name": "Mens Sport" , 
+            "category": "Sport" , 
+            "price": 550 ,
+            "comments": [] 
+        },
+        {
+            "id": 3 , 
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Truckerhat.jpg/800px-Truckerhat.jpg",
+            "name": "Trucker" , 
+            "category": "Hat" , 
             "price": 200 ,
             "comments": [] 
         }
