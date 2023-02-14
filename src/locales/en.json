@@ -1,12 +1,13 @@
 {
   "message": "Hello vue js",
-  "lorem": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual...",
+  "lorem": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual In publishing and graphic design, Lorem ipsum is a placeholder...",
   "nav": {
     "home" : "Home" , 
-    "about" : "About" , 
+    "about" : "About Us" , 
     "products" : "Products" , 
-    "contact" : "Contact" 
+    "contact" : "Contact Us" 
   } , 
   "price" : "Price",
-  "newproducts" : "New Products"
+  "newproducts" : "New Products",
+  "headertitle" : "Shopping Card JSON SERVER"
 }

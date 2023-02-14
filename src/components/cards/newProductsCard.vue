@@ -6,13 +6,13 @@
       <p class="size_s px-2">{{ category }}</p>
       <p class="size_v_s gary_color px-2">{{ $t("lorem") }}</p>
       <div class="d-flex w-100">
-        <div class="d-flex w-50">
-          <p class="size_s px-2 pt-1">{{ $t("price") }} :</p>
-          <p class="size_s pt-1">{{ price }} $</p>
+        <div class="d-flex w-40">
+          <p class="size_v_m pt-1 px-2">{{ price }} $</p>
         </div>
-       <div class="d-flex justify-content-end w-50">
-        <baseBtn class="mx-2" color="primary" name="Add To Card" icon="card" />
-       </div>
+        <div class="d-flex justify-content-end w-60">
+          <baseBtn class="mx-2" color="primary" name="Detail" icon="send" />
+          <baseBtn class="mx-2" color="primary" name="Add To Card" icon="card" />
+        </div>
       </div>
     </template>
   </baseCard>
